@@ -1,31 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Moses Agbede</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Moses Oyeyemi Agbede</title>
+  <meta name="description" content="Economist | Academic researcher" />
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: 60px auto;
-      line-height: 1.6;
+    :root{
+      --text:#111827; --muted:#4b5563; --link:#1d4ed8; --bg:#ffffff; --card:#f9fafb; --border:#e5e7eb;
     }
+    body{
+      margin:0; background:var(--bg); color:var(--text);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      line-height:1.65;
+    }
+    .wrap{max-width:920px; margin:0 auto; padding:28px 18px 56px;}
+    header{padding:18px 0 12px; border-bottom:1px solid var(--border);}
+    .top{
+      display:flex; gap:18px; align-items:flex-start; justify-content:space-between; flex-wrap:wrap;
+    }
+    h1{margin:0; font-size:32px; letter-spacing:-0.02em;}
+    .subtitle{margin:6px 0 0; color:var(--muted);}
+    nav{
+      margin-top:14px; display:flex; flex-wrap:wrap; gap:10px;
+    }
+    nav a{
+      text-decoration:none; color:var(--text);
+      padding:8px 10px; border:1px solid var(--border); border-radius:10px;
+      background:var(--card);
+    }
+    nav a:hover{border-color:#cbd5e1;}
+    section{padding:22px 0; border-bottom:1px solid var(--border);}
+    section:last-child{border-bottom:none;}
+    h2{margin:0 0 10px; font-size:22px;}
+    p{margin:8px 0;}
+    a{color:var(--link);}
+    ul{margin:10px 0 0 18px;}
+    .grid{
+      display:grid; grid-template-columns: 1fr 1fr; gap:14px;
+    }
+    @media (max-width:760px){ .grid{grid-template-columns:1fr;} }
+    .card{
+      border:1px solid var(--border); border-radius:14px; padding:14px 14px;
+      background:var(--card);
+    }
+    .small{color:var(--muted); font-size:14px;}
+    footer{padding-top:18px; color:var(--muted); font-size:14px;}
   </style>
 </head>
+
 <body>
-  <h1>Moses Agbede</h1>
-  <p>Economist and academic researcher.</p>
+  <div class="wrap">
+    <header>
+      <div class="top">
+        <div>
+          <h1>Moses Oyeyemi Agbede</h1>
+          <p class="subtitle">PhD Researcher (Economics) • Labor & Health Economics • Applied Econometrics</p>
+          <p class="small">
+            Email: <a href="mailto:YOUR_EMAIL_HERE">YOUR_EMAIL_HERE</a> •
+            GitHub: <a href="https://github.com/mosesagbede" target="_blank" rel="noopener">mosesagbede</a>
+          </p>
+        </div>
+      </div>
 
-  <h2>About</h2>
-  <p>
-    I work on labor economics, health economics, and applied econometrics.
-  </p>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#working-papers">Working Papers</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#cv">CV</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-  <h2>Links</h2>
-  <ul>
-    <li><a href="https://github.com/mosesagbede">GitHub</a></li>
-    <li><a href="#">Google Scholar</a></li>
-    <li><a href="#">CV (PDF)</a></li>
-  </ul>
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        I am an economist and academic researcher. My interests include labor economics, health economics,
+        and applied econometrics, with a focus on policy-relevant questions and microdata analysis.
+      </p>
+      <p class="small">
+        Areas: labor supply • health shocks • social assistance • insurance and welfare • causal inference
+      </p>
+    </section>
+
+    <section id="research">
+      <h2>Research</h2>
+      <div class="grid">
+        <div class="card">
+          <strong>Health shocks & household welfare (Nigeria)</strong>
+          <p class="small">
+            How illness affects labor supply, income, and consumption; role of insurance and social assistance.
+          </p>
+        </div>
+        <div class="card">
+          <strong>Health insurance & labor market outcomes</strong>
+          <p class="small">
+            Coverage expansions and employment dynamics; policy evaluation with survey data.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="working-papers">
+      <h2>Working Papers</h2>
+      <ul>
+        <li>
+          <strong>Title of Paper 1</strong> (Year). <span class="small">Status: Working Paper.</span>
+          <br/><span class="small">One-line description. <a href="#">PDF</a> • <a href="#">Replication</a></span>
+        </li>
+        <li>
+          <strong>Title of Paper 2</strong> (Year). <span class="small">Status: In progress.</span>
+          <br/><span class="small">One-line description. <a href="#">PDF</a></span>
+        </li>
+      </ul>
+      <p class="small">Tip: You can link PDFs you upload into this repo (see CV step below).</p>
+    </section>
+
+    <section id="teaching">
+      <h2>Teaching</h2>
+      <ul>
+        <li><strong>Course Name</strong> — Role (e.g., TA/Instructor), Institution, Year</li>
+        <li><strong>Course Name</strong> — Role, Institution, Year</li>
+      </ul>
+    </section>
+
+    <section id="cv">
+      <h2>CV</h2>
+      <p>
+        Download my CV (PDF): <a href="cv.pdf">cv.pdf</a>
+      </p>
+      <p class="small">This link will work after you upload your CV as <code>cv.pdf</code>.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:YOUR_EMAIL_HERE">YOUR_EMAIL_HERE</a></p>
+      <p class="small">
+        External profiles:
+        <a href="https://github.com/mosesagbede" target="_blank" rel="noopener">GitHub</a> •
+        <a href="YOUR_GOOGLE_SCHOLAR_LINK" target="_blank" rel="noopener">Google Scholar</a> •
+        <a href="YOUR_ORCID_LINK" target="_blank" rel="noopener">ORCID</a> •
+        <a href="YOUR_SSRN_LINK" target="_blank" rel="noopener">SSRN</a>
+      </p>
+    </section>
+
+    <footer>
+      © <span id="yr"></span> Moses Oyeyemi Agbede • Hosted on GitHub Pages
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("yr").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
